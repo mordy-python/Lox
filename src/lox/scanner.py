@@ -9,7 +9,7 @@ class Scanner:
     start: int = 0
     current: int = 0
     line: int = 1
-    keywords = {
+    keywords: Dict[str] = {
         "and": TokenType.AND,
         "or": TokenType.OR,
         "not": TokenType.NOT,
