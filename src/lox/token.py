@@ -1,5 +1,5 @@
 from typing import Any
-from lox.token_type import TokenType
+from .token_type import TokenType
 
 
 class Token:
@@ -17,4 +17,4 @@ class Token:
         self.line = line
 
     def __repr__(self) -> str:
-        return f"{self.token_type} {self.lexeme} {self.literal}"
+        return f"<{self.token_type} {self.lexeme!r} {self.literal}>"
